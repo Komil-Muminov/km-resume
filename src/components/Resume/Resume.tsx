@@ -1,5 +1,5 @@
-import "./resume.css";
 import person from "../../assets/2.jpg";
+// import "./Resume.css";
 const Resume = () => {
 	return (
 		<div className="container">
