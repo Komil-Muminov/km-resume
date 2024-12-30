@@ -22,7 +22,7 @@ const Resume = () => {
 					</p>
 					<p>
 						<strong>Telegram:</strong>
-						<a href="https://t.me/test">@test</a>
+						<a href="https://t.me/test">@kmff7</a>
 					</p>
 					<span>
 						<strong>GitHub:</strong>
