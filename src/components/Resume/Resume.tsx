@@ -8,10 +8,10 @@ const Resume = () => {
 				<div className="info">
 					<h1>Табаров Комилджон</h1>
 					<p>
-						<strong>Город проживания:</strong> Душанбе
+						<strong>Местоположение:</strong> Душанбе
 					</p>
 					<p>
-						<strong>Дата рождения:</strong> 01.04.1997
+						<strong>Дата рождения:</strong> 01 апреля 1997
 					</p>
 					<p>
 						<strong>Телефон:</strong> +992900019116 / +79614780838
@@ -32,54 +32,55 @@ const Resume = () => {
 					</span>
 				</div>
 			</div>
+
 			<div className="section">
 				<h2>Желаемая должность</h2>
 				<p>Frontend-разработчик (React)</p>
 			</div>
+
 			<div className="section">
 				<h2>Навыки</h2>
 				<ul>
-					<li>HTML, CSS</li>
+					<li>HTML, CSS (Flexbox, Grid, Bootstrap, Tailwind CSS)</li>
 					<li>SCSS</li>
-					<li>JavaScript ES6</li>
-					<li>TypeScript</li>
-					<li>React JS / Vite JS / Next JS</li>
-					<li>Адаптивная, кроссбраузерная, семантическая верстка</li>
+					<li>JavaScript (ES6+), TypeScript</li>
+					<li>React JS, Vite JS, Next JS</li>
+					<li>Адаптивная и кроссбраузерная верстка</li>
 					<li>Работа с макетами в Figma</li>
-					<li>Работа с системами контроля версий (Git)</li>
-					<li>
-						SQL: Опыт работы с реляционными базами данных и выполнения
-						SQL-запросов.
-					</li>
-					<li>Python</li>
+					<li>Системы контроля версий (Git)</li>
+					<li>Основы Python, Node.js (Express)</li>
+					<li>Опыт работы с реляционными базами данных и SQL</li>
 				</ul>
 			</div>
+
 			<div className="section">
 				<h2>Опыт работы</h2>
 				<h3>
-					Проектная деятельность по Frontend-разработке: Frontend-разработчик,
-					Сентябрь 2023 — по настоящее время.
+					Frontend-разработчик, проектная деятельность — Сентябрь 2023 — по
+					настоящее время
 				</h3>
 				<p>
-					<b>Стек технологий:</b> HTML5, CSS (Flexbox, Grid, Bootstrap, Tailwind
-					CSS), SCSS, JavaScript, TypeScript (с использованием Zod), React +
-					React Query, Next.js, GSAP.
+					<b>Технологический стек:</b> HTML5, CSS (Flexbox, Grid, Bootstrap,
+					Tailwind CSS), SCSS, JavaScript, TypeScript (Zod), React, Next.js,
+					React Query, React Hook Form, Motion, GSAP.
 				</p>
 				<p>
-					<b>Достижения:</b> Реализовал несколько проектов с использованием
-					современных технологий и библиотек, включая создание сложных
-					интерфейсов с помощью React. Применял CSS-фреймворки Bootstrap и
-					Tailwind CSS для адаптивной верстки и ускорения разработки.
-					Использовал библиотеку Zod для валидации данных в проектах на
-					JavaScript / TypeScript.
+					<b>Основные достижения:</b> Разработка и внедрение проектов с
+					использованием React и других современных технологий. Создание
+					адаптивных интерфейсов с использованием CSS-фреймворков (например,
+					Bootstrap и Tailwind CSS), интеграция валидации с Zod, создание
+					динамичных анимаций с GSAP и Motion, использование React Query для
+					работы с асинхронными данными и React Hook Form для управления
+					формами.
 				</p>
 				<span>
-					C моими проектами можно ознакомиться по ссылке на
-					<a href="#" className="git__link">
-						Гитхаб
+					Посмотреть мои проекты можно на{" "}
+					<a href="https://github.com/Komil-Muminov" className="git__link">
+						https://github.com/Komil-Muminov
 					</a>
 				</span>
 			</div>
+
 			<div className="section">
 				<h2>Образование</h2>
 				<p>
@@ -92,37 +93,40 @@ const Resume = () => {
 					<strong>Период обучения:</strong> 2015 — 2019
 				</p>
 			</div>
+
 			<div className="section">
 				<h2>Обо мне</h2>
 				<p>
-					Я занимаюсь Frontend-разработкой на протяжении года. Слежу за новыми
-					тенденциями в веб-разработке, развиваю свои навыки для достижения
-					лучших результатов в работе. В настоящее время работаю младшим
-					специалистом по веб-разработке в Министерстве финансов Республики
-					Таджикистан. В своей работе использую современные технологии, включая
-					React, Visual Studio/Visual Studio Code, а также Microsoft SQL Server.
+					Я Frontend-разработчик с годичным опытом работы, увлечен
+					веб-разработкой и постоянно развиваю свои навыки. На данный момент я
+					работаю младшим специалистом по веб-разработке в Министерстве финансов
+					Республики Таджикистан. Моя работа включает в себя использование
+					современных технологий, таких как React, Visual Studio Code и
+					Microsoft SQL Server.
 				</p>
-				<p>Рассматриваю стажировку и удаленную работу.</p>
 			</div>
+
 			<div className="section">
 				<h2>Курсы и тренинги</h2>
 				<p>
-					"JavaScript level 1", 2022-2023. <strong>Алиф академия</strong>
-				</p>
-				<p>
-					"JavaScript level 2 (React JS)", 2022-2023.
+					<strong>"JavaScript level 1"</strong> — 2022-2023,{" "}
 					<strong>Алиф академия</strong>
 				</p>
 				<p>
-					"Frontend-разработик PRO", 2023-2024. <strong>Скиллбокс</strong>
+					<strong>"JavaScript level 2 (React JS)"</strong> — 2022-2023,{" "}
+					<strong>Алиф академия</strong>
 				</p>
 				<p>
-					"Основы Python: создаём телеграмбота", 2024.
+					<strong>"Frontend-разработчик PRO"</strong> — 2023-2024,{" "}
+					<strong>Скиллбокс</strong>
+				</p>
+				<p>
+					<strong>"Основы Python: создаём телеграмбота"</strong> — 2024,{" "}
 					<strong>Нетология</strong>
 				</p>
 				<p>
-					Английский язык, Уровень B1,
-					<strong>УЦА 2024 по н.в.</strong>
+					<strong>Английский язык, Уровень B1</strong> —{" "}
+					<strong>УЦА, 2024 по настоящее время</strong>
 				</p>
 			</div>
 		</div>
