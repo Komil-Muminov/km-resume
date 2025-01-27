@@ -26,9 +26,7 @@ const Resume = () => {
 					</p>
 					<span>
 						<strong>GitHub:</strong>
-						<a href="https://github.com/Komil-Muminov">
-							https://github.com/Komil-Muminov
-						</a>
+						<a href="https://github.com/Komil-Muminov">Гитхаб</a>
 					</span>
 				</div>
 			</div>
