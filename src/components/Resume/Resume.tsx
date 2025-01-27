@@ -22,7 +22,7 @@ const Resume = () => {
 					</p>
 					<p>
 						<strong>Telegram:</strong>
-						<a href="https://t.me/test">@kmff7</a>
+						<a href="https://t.me/test">@iamff7</a>
 					</p>
 					<span>
 						<strong>GitHub:</strong>
@@ -41,15 +41,40 @@ const Resume = () => {
 			<div className="section">
 				<h2>Навыки</h2>
 				<ul>
-					<li>HTML, CSS (Flexbox, Grid, Bootstrap, Tailwind CSS)</li>
-					<li>SCSS</li>
-					<li>JavaScript (ES6+), TypeScript</li>
-					<li>React JS, Vite JS, Next JS</li>
-					<li>Адаптивная и кроссбраузерная верстка</li>
-					<li>Работа с макетами в Figma</li>
-					<li>Системы контроля версий (Git)</li>
-					<li>Основы Python, Node.js (Express)</li>
-					<li>Опыт работы с реляционными базами данных и SQL</li>
+					<li>
+						<strong>Frontend:</strong>
+						<ul>
+							<li>HTML, CSS (Flexbox, Grid, Bootstrap, Tailwind CSS)</li>
+							<li>SCSS</li>
+							<li>JavaScript (ES6+), TypeScript</li>
+							<li>React JS, Vite JS, Next JS</li>
+							<li>Адаптивная и кроссбраузерная верстка</li>
+							<li>Работа с макетами в Figma</li>
+							<li>Работа с системами контроля версий (Git)</li>
+							<li>
+								<strong>Базы данных:</strong> SQL, MongoDB.
+							</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Backend:</strong>
+						<ul>
+							<li>Основы Python, Node.js (Express)</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Базы данных:</strong>
+						<ul>
+							<li>SQL</li>
+							<li>MongoDB</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Инструменты:</strong>
+						<ul>
+							<li>Системы контроля версий (Git)</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 
@@ -60,10 +85,23 @@ const Resume = () => {
 					настоящее время
 				</h3>
 				<p>
-					<b>Технологический стек:</b> HTML5, CSS (Flexbox, Grid, Bootstrap,
-					Tailwind CSS), SCSS, JavaScript, TypeScript (Zod), React, Next.js,
-					React Query, React Hook Form, Motion, GSAP.
+					<strong>Технологический стек:</strong>
 				</p>
+				<ul>
+					<li>
+						<strong>Frontend:</strong> HTML5, CSS (Flexbox, Grid, Bootstrap,
+						Tailwind CSS), SCSS, JavaScript, TypeScript (Zod), React, Next.js,
+						React Query, React Hook Form, Framer Motion, GSAP.
+					</li>
+					<li>
+						<strong>Backend:</strong> Node.js (Express), Python (базовый
+						уровень).
+					</li>
+					<li>
+						<strong>Базы данных:</strong> SQL, MongoDB.
+					</li>
+				</ul>
+
 				<p>
 					<b>Основные достижения:</b> Разработка и внедрение проектов с
 					использованием React и других современных технологий. Создание
