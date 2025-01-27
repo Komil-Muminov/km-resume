@@ -44,13 +44,30 @@ const Resume = () => {
 					<li>
 						<strong>Frontend:</strong>
 						<ul>
-							<li>HTML, CSS (Flexbox, Grid, Bootstrap, Tailwind CSS)</li>
-							<li>SCSS</li>
-							<li>JavaScript (ES6+), TypeScript</li>
-							<li>React JS, Vite JS, Next JS</li>
-							<li>Адаптивная и кроссбраузерная верстка</li>
-							<li>Работа с макетами в Figma</li>
-							<li>Работа с системами контроля версий (Git)</li>
+							<li>
+								<strong>HTML, CSS</strong> (Flexbox, Grid, Bootstrap, Tailwind
+								CSS)
+							</li>
+							<li>
+								<strong>SCSS</strong>
+							</li>
+							<li>
+								<strong>JavaScript</strong> (ES6+), <strong>TypeScript</strong>
+							</li>
+							<li>
+								<strong>React JS</strong>, <strong>Vite JS</strong>,{" "}
+								<strong>Next JS</strong>
+							</li>
+							<li>
+								<strong>Адаптивная</strong> и{" "}
+								<strong>кроссбраузерная верстка</strong>
+							</li>
+							<li>
+								Работа с макетами в <strong>Figma</strong>
+							</li>
+							<li>
+								Работа с системами контроля версий (<strong>Git</strong>)
+							</li>
 							<li>
 								<strong>Базы данных:</strong> SQL, MongoDB.
 							</li>
