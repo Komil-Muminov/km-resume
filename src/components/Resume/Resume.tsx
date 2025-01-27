@@ -130,19 +130,6 @@ const Resume = () => {
 						<strong>Базы данных:</strong> SQL, MongoDB.
 					</li>
 				</ul>
-				html Копировать Редактировать
-				<p>
-					<strong>Технологический стек:</strong>
-				</p>
-				<p>
-					<strong>Frontend:</strong> Разработка и внедрение проектов с
-					использованием React и других современных технологий. Создание
-					адаптивных интерфейсов с использованием CSS-фреймворков (например,
-					Bootstrap и Tailwind CSS), интеграция валидации с Zod, создание
-					динамичных анимаций с GSAP и Framer Motion, использование React Query
-					для работы с асинхронными данными и React Hook Form для управления
-					формами.
-				</p>
 				<p>
 					<strong>Backend:</strong> Node.js (Express), Python (базовый уровень).
 				</p>
@@ -152,7 +139,7 @@ const Resume = () => {
 				<span>
 					Посмотреть мои проекты можно на{" "}
 					<a href="https://github.com/Komil-Muminov" className="git__link">
-						https://github.com/Komil-Muminov
+						Гитхабе
 					</a>
 				</span>
 			</div>
