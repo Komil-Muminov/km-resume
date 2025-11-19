@@ -64,10 +64,11 @@ export const PROJECTS: Project[] = [
 	},
 	{
 		id: 2,
-		title: "Страницу госструктуры",
+		title: "Страницы госструктуры",
 		description:
-			"Разработка основных frontend-модулей для государственной структуры Таджикистана с использованием React и TypeScript.",
-		tech: ["React", "TypeScript", "MS SQL"],
+			"Участвовал в разработке и поддержке веб-сайта государственной структуры Таджикистана.",
+		tech: ["HTML", "JavaScript", "MS SQL"],
+		link: "https://moliya.tj/",
 		image: "https://picsum.photos/600/400?random=1",
 	},
 	{
