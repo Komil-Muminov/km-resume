@@ -9,7 +9,7 @@ export const RESUME_CONTEXT = `
 
 Обо мне: Frontend-разработчик с опытом более 1 года. Работаю младшим специалистом в госструктуре Таджикистана. Стек: React, VS Code, MS SQL Server.
 Образование: СКФУ (Пятигорск), Информационные системы и технологии (2015-2019).
-Языки: Русский (родной), Английский (B1).
+Языки: Таджикский(родной),Русский.
 
 Навыки Frontend: HTML, CSS (Flexbox, Grid, Bootstrap, Tailwind), SCSS, JS (ES6+), TypeScript, React JS, Vite, Next JS, Framer Motion, GSAP.
 Навыки Backend: Основы Python, Node.js (Express).
