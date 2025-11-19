@@ -1,4 +1,4 @@
-import { NavigationItem, Project, SkillCategory } from './types';
+import { NavigationItem, Project, SkillCategory } from "./types";
 
 export const RESUME_CONTEXT = `
 Имя: Табаров Комилджон
@@ -27,52 +27,55 @@ export const RESUME_CONTEXT = `
 `;
 
 export const NAV_ITEMS: NavigationItem[] = [
-  { label: 'Обо мне', href: '#about' },
-  { label: 'Навыки', href: '#skills' },
-  { label: 'Проекты', href: '#projects' },
-  { label: 'Контакты', href: '#contact' },
+	{ label: "Обо мне", href: "#about" },
+	{ label: "Навыки", href: "#skills" },
+	{ label: "Проекты", href: "#projects" },
+	{ label: "Контакты", href: "#contact" },
 ];
 
 export const SKILLS: SkillCategory[] = [
-  {
-    name: 'Основы Frontend',
-    skills: ['React', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3'],
-  },
-  {
-    name: 'Стилизация и Анимация',
-    skills: ['Tailwind CSS', 'SCSS', 'Framer Motion', 'GSAP', 'Bootstrap'],
-  },
-  {
-    name: 'Инструменты',
-    skills: ['Next.js', 'Vite', 'Git', 'Figma', 'VS Code'],
-  },
-  {
-    name: 'Backend и БД',
-    skills: ['Node.js', 'Python (Basic)', 'SQL', 'MongoDB', 'MS SQL Server'],
-  },
+	{
+		name: "Основы Frontend",
+		skills: ["React", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3"],
+	},
+	{
+		name: "Стилизация и Анимация",
+		skills: ["Tailwind CSS", "SCSS", "Framer Motion", "GSAP", "Bootstrap"],
+	},
+	{
+		name: "Инструменты",
+		skills: ["Next.js", "Vite", "Git", "Figma", "VS Code"],
+	},
+	{
+		name: "Backend и БД",
+		skills: ["Node.js", "Python (Basic)", "SQL", "MongoDB", "MS SQL Server"],
+	},
 ];
 
 export const PROJECTS: Project[] = [
-  {
-    id: 1,
-    title: 'Cargo Zubbar',
-    description: 'Современная логистическая платформа для управления грузоперевозками. Интуитивный интерфейс и быстрая работа.',
-    tech: ['React', 'Next.js', 'Tailwind CSS'],
-    link: 'http://cargo-zubbar.vercel.app/',
-    image: 'https://picsum.photos/600/400?random=10'
-  },
-  {
-    id: 2,
-    title: 'Модуль Гос. Портала',
-    description: 'Разработка основных frontend-модулей для государственной структуры Таджикистана с использованием React и TypeScript.',
-    tech: ['React', 'TypeScript', 'MS SQL'],
-    image: 'https://picsum.photos/600/400?random=1'
-  },
-  {
-    id: 3,
-    title: 'E-Commerce Дашборд',
-    description: 'Адаптивная панель управления для товаров и заказов с визуализацией данных.',
-    tech: ['Next.js', 'Tailwind', 'React Query'],
-    image: 'https://picsum.photos/600/400?random=2'
-  },
+	{
+		id: 1,
+		title: "Cargo Zudbar",
+		description:
+			"Современная логистическая платформа для управления грузоперевозками. Интуитивный интерфейс и быстрая работа.",
+		tech: ["React", "Next.js", "Tailwind CSS"],
+		link: "http://cargo-zubbar.vercel.app/",
+		image: "https://picsum.photos/600/400?random=10",
+	},
+	{
+		id: 2,
+		title: "Страницу госструктуры",
+		description:
+			"Разработка основных frontend-модулей для государственной структуры Таджикистана с использованием React и TypeScript.",
+		tech: ["React", "TypeScript", "MS SQL"],
+		image: "https://picsum.photos/600/400?random=1",
+	},
+	{
+		id: 3,
+		title: "E-Commerce Дашборд",
+		description:
+			"Адаптивная панель управления для товаров и заказов с визуализацией данных.",
+		tech: ["Next.js", "Tailwind", "React Query"],
+		image: "https://picsum.photos/600/400?random=2",
+	},
 ];
