@@ -3,7 +3,6 @@ import { MessageSquare, X, Send, Loader2, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { generateChatResponse } from "../services/geminiService";
 import { ChatMessage, SenderType } from "../types";
-
 export const ChatWidget: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [input, setInput] = useState("");
@@ -46,7 +45,6 @@ export const ChatWidget: React.FC = () => {
 
 	return (
 		<>
-			{/* Toggle Button */}
 			<AnimatePresence>
 				{!isOpen && (
 					<motion.button
@@ -62,8 +60,6 @@ export const ChatWidget: React.FC = () => {
 					</motion.button>
 				)}
 			</AnimatePresence>
-
-			{/* Chat Window */}
 			<AnimatePresence>
 				{isOpen && (
 					<motion.div
@@ -72,7 +68,6 @@ export const ChatWidget: React.FC = () => {
 						exit={{ opacity: 0, y: 20, scale: 0.95 }}
 						className="fixed bottom-6 right-6 z-50 w-[90vw] max-w-[380px] h-[500px] bg-slate-900 border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden font-sans"
 					>
-						{/* Header */}
 						<div className="p-4 bg-gradient-to-r from-primary to-secondary flex items-center justify-between text-white shadow-md">
 							<div className="flex items-center gap-2">
 								<Sparkles size={18} className="text-yellow-300" />
@@ -85,8 +80,6 @@ export const ChatWidget: React.FC = () => {
 								<X size={20} />
 							</button>
 						</div>
-
-						{/* Messages Area */}
 						<div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-900 custom-scrollbar">
 							{messages.map((msg, idx) => (
 								<div
@@ -119,8 +112,6 @@ export const ChatWidget: React.FC = () => {
 							)}
 							<div ref={messagesEndRef} />
 						</div>
-
-						{/* Input Area */}
 						<div className="p-4 bg-slate-800 border-t border-white/5">
 							<div className="relative">
 								<input
