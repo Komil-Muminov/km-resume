@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import person from "../assets/2.jpg";
-// Placeholder if asset fails
 const PROFILE_IMG = "https://picsum.photos/400/500";
 
 export const About: React.FC = () => {

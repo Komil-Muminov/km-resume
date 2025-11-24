@@ -1,11 +1,8 @@
 import { GoogleGenAI } from "@google/genai";
 import { RESUME_CONTEXT } from "../constants";
-
 let aiClient: GoogleGenAI | null = null;
-
 const getClient = (): GoogleGenAI => {
 	if (!aiClient) {
-		// process.env.API_KEY is injected in index.tsx for this demo
 		aiClient = new GoogleGenAI({ apiKey: process.env.API_KEY });
 	}
 	return aiClient;
@@ -16,8 +13,6 @@ export const generateChatResponse = async (
 ): Promise<string> => {
 	try {
 		const client = getClient();
-
-		// Using the recommended model for text tasks
 		const response = await client.models.generateContent({
 			model: "gemini-2.5-flash-lite",
 			contents: userMessage,
