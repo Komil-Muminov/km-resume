@@ -4,7 +4,7 @@ import App from "./App";
 if (typeof process === "undefined") {
 	(window as any).process = { env: {} };
 }
-process.env.API_KEY = "AIzaSyBLCK_Mpgh-Kf9WdavIf72mFnfmr1yZnn8";
+process.env.API_KEY = "AIzaSyDdcsAQlI-sgdj-OFNoovX7Pu8tUc07Bik";
 const rootElement = document.getElementById("root");
 if (!rootElement) {
 	throw new Error("Could not find root element to mount to");
