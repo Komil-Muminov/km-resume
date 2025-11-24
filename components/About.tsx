@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import person from "../assets/2.jpg";
-const PROFILE_IMG = "https://picsum.photos/400/500";
+const PROFILE_IMG = "../km.jpg";
 
 export const About: React.FC = () => {
 	return (
@@ -12,7 +11,7 @@ export const About: React.FC = () => {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true, margin: "-100px" }}
 					transition={{ duration: 0.6 }}
-					className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+					className="grid grid-cols-1 md:grid-cols-2 gap-12"
 				>
 					<div className="relative group">
 						<div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
@@ -24,8 +23,7 @@ export const About: React.FC = () => {
 							/>
 						</div>
 					</div>
-
-					<div className="space-y-6">
+					<div className="space-y-3 self-start">
 						<h2 className="text-3xl md:text-4xl font-bold">Обо мне</h2>
 						<div className="h-1 w-20 bg-primary rounded-full" />
 
