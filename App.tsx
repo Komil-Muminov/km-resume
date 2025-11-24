@@ -30,9 +30,7 @@ const App: React.FC = () => {
 			</main>
 
 			<footer className="w-full py-6 text-center text-slate-500 text-sm border-t border-slate-800">
-				<p>
-					© {new Date().getFullYear()} Komiljon Tabarov. All rights reserved.
-				</p>
+				<p>© {new Date().getFullYear()} Komil Muminov. All rights reserved.</p>
 			</footer>
 
 			<ChatWidget />
