@@ -15,8 +15,8 @@ export const About: React.FC = () => {
 						<div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
 						<div className="relative rounded-xl overflow-hidden border border-white/10">
 							<img
-								// src={PROFILE_IMG}
-								src="../km.jpg"
+								// src={PROFILE_IMG}v
+								src="/public/km.jpg"
 								alt="Komil Muminov"
 								className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
 							/>
