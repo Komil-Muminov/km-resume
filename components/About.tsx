@@ -16,7 +16,7 @@ export const About: React.FC = () => {
 						<div className="relative rounded-xl overflow-hidden border border-white/10">
 							<img
 								// src={PROFILE_IMG}v
-								src="/public/km.jpg"
+								src="/km.jpg"
 								alt="Komil Muminov"
 								className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
 							/>
@@ -25,14 +25,12 @@ export const About: React.FC = () => {
 					<div className="space-y-3 self-start">
 						<h2 className="text-3xl md:text-4xl font-bold">Обо мне</h2>
 						<div className="h-1 w-20 bg-primary rounded-full" />
-
 						<p className="text-slate-400 leading-relaxed">
-							1Я Frontend-разработчик из Душанбе, увлеченный созданием удобных и
+							Я Frontend-разработчик из Душанбе, увлеченный созданием удобных и
 							эстетичных веб-приложений. Имею опыт работы более года, в данный
 							момент занимаю позицию младшего специалиста в государственной
 							структуре Таджикистана.
 						</p>
-
 						<p className="text-slate-400 leading-relaxed">
 							Мой путь в IT начался в Северо-Кавказском федеральном университете
 							(2015-2019). Я верю в непрерывное обучение:
