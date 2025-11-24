@@ -3,7 +3,7 @@ import { NavigationItem, Project, SkillCategory } from './types';
 export const RESUME_CONTEXT = `
 Имя: Комил Муминов
 Дата рождения: 01 апреля 1997
-Контакты: +992900019116, itmuminoff@gmail.com, Telegram: @iamff7
+Контакты: +992900019116, itmuminoff@gmail.com, Telegram: @
 Местоположение: Душанбе
 Желаемая должность: Frontend-разработчик (React)
 
