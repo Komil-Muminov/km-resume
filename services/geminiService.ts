@@ -10,7 +10,7 @@ let chatSession: Chat | null = null; // Переменная для хранен
  */
 const getClient = (): GoogleGenAI => {
 	if (!aiClient) {
-		aiClient = new GoogleGenAI({ apiKey: process.env.API_KEY });
+		aiClient = new GoogleGenAI({ apiKey: "process.env.API_KEY" });
 	}
 	return aiClient;
 };
