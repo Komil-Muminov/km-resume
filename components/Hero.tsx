@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Sparkles, Float } from "@react-three/drei";
 import { motion } from "framer-motion";
-
 const DecryptText = () => {
 	const TARGET_TEXT = "PHENOMEN";
 	const CYCLES_PER_LETTER = 2;
@@ -11,12 +10,10 @@ const DecryptText = () => {
 
 	const [text, setText] = useState(TARGET_TEXT);
 	const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
 	const scramble = () => {
 		let pos = 0;
 
 		if (intervalRef.current) clearInterval(intervalRef.current);
-
 		intervalRef.current = setInterval(() => {
 			const scrambled = TARGET_TEXT.split("")
 				.map((char, index) => {
@@ -39,31 +36,23 @@ const DecryptText = () => {
 			}
 		}, SHUFFLE_TIME);
 	};
-
-	// Trigger on mount
 	useEffect(() => {
 		scramble();
-		// Optional: Scramble periodically or just once
 		const autoScramble = setInterval(() => {
 			scramble();
-		}, 5000); // Re-scramble every 5 seconds for effect
-
+		}, 5000);
 		return () => {
 			if (intervalRef.current) clearInterval(intervalRef.current);
 			clearInterval(autoScramble);
 		};
 	}, []);
-
 	return (
 		<div className="relative group cursor-pointer" onMouseEnter={scramble}>
-			{/* Glow effect behind */}
 			<div className="absolute -inset-4 bg-gradient-to-r from-primary via-purple-500 to-secondary rounded-lg blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
 
 			<h1 className="relative font-mono text-5xl md:text-7xl lg:text-9xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-500 select-none">
 				{text}
 			</h1>
-
-			{/* Decorative underline */}
 			<motion.div
 				className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent mt-2"
 				initial={{ width: "0%" }}
@@ -73,16 +62,12 @@ const DecryptText = () => {
 		</div>
 	);
 };
-
 export const Hero: React.FC = () => {
 	return (
 		<section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-dark">
-			{/* 3D Background Layer (Particles Only) */}
 			<div className="absolute inset-0 z-0 pointer-events-none">
 				<Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
 					<ambientLight intensity={0.5} />
-
-					{/* Floating particles for atmosphere */}
 					<Float speed={1} rotationIntensity={0.5} floatIntensity={0.5}>
 						<Sparkles
 							count={150}
@@ -103,10 +88,7 @@ export const Hero: React.FC = () => {
 					</Float>
 				</Canvas>
 			</div>
-
-			{/* Content Layer */}
 			<div className="relative z-10 max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-				{/* Left Column: Intro Text */}
 				<div className="text-center lg:text-left order-2 lg:order-1 mt-10 lg:mt-0">
 					<motion.div
 						initial={{ opacity: 0, x: -30 }}
@@ -142,14 +124,10 @@ export const Hero: React.FC = () => {
 						</div>
 					</motion.div>
 				</div>
-
-				{/* Right Column: PHENOMEN Animation */}
 				<div className="order-1 lg:order-2 flex justify-center items-center">
 					<DecryptText />
 				</div>
 			</div>
-
-			{/* Scroll Indicator */}
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1, y: [0, 10, 0] }}
