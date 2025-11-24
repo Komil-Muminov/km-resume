@@ -54,7 +54,7 @@ export const About: React.FC = () => {
 							<div>
 								<h4 className="text-white font-semibold">Языки</h4>
 								<p className="text-slate-500">
-									Русский (Родной), Английский (B1)
+									Таджикский (Родной), Русский (Свободный), Английский (B1)
 								</p>
 							</div>
 							<div>
