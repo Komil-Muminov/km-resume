@@ -7,14 +7,28 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependencies
+/node_modules
+
+# Build output directories
+/dist
+/dist-ssr
+/build
+/out
+
+# Environment variables and secrets
+# Исключает все файлы .env* и *.local, 
+# кроме шаблонов (например, .env.example)
+.env
+.env.*
+!**/.env.example
+!**/.env.defaults
 *.local
+*.local.*
 
 # Editor directories and files
 .vscode/*
-!.vscode/extensions.json
+!.vscode/extensions.json  # Разрешаем отслеживание списка рекомендуемых расширений
 .idea
 .DS_Store
 *.suo

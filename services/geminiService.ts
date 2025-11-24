@@ -10,7 +10,13 @@ let chatSession: Chat | null = null; // Переменная для хранен
  */
 const getClient = (): GoogleGenAI => {
 	if (!aiClient) {
-		aiClient = new GoogleGenAI({ apiKey: "process.env.API_KEY" });
+		const apiKey = (import.meta as any).env?.VITE_GEMINI_API_KEY || "";
+
+		if (!apiKey) {
+			throw new Error("Gemini API Key is not set in environment variables.");
+		}
+
+		aiClient = new GoogleGenAI({ apiKey: apiKey as string });
 	}
 	return aiClient;
 };
