@@ -95,7 +95,7 @@ export const Hero: React.FC = () => {
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 					>
-						<span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-semibold mb-5 tracking-wide">
+						<span className=" text-emerald-400 py-1 px-3 rounded-full  border border-primary/20 text-sm font-semibold ">
 							Frontend Developer
 						</span>
 						<h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
