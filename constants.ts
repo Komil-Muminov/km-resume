@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
 			"Современная логистическая платформа для управления грузоперевозками. Интуитивный интерфейс и быстрая работа.",
 		tech: ["React", "Next.js", "Tailwind CSS"],
 		link: "http://cargo-zubbar.vercel.app/",
-		image: "https://picsum.photos/600/400?random=10",
+		image: `${"./public/truck.webp"}`,
 	},
 	{
 		id: 2,
@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
 		description:
 			"Разработка страницы для государственной структуры Таджикистана",
 		tech: ["React", "TypeScript", "MS SQL"],
-		image: "https://picsum.photos/600/400?random=1",
+		image: `${"./public/builder.jpg"}`,
 	},
 	{
 		id: 3,
@@ -76,6 +76,6 @@ export const PROJECTS: Project[] = [
 		description:
 			"Адаптивная панель управления для товаров и заказов с визуализацией данных.",
 		tech: ["Next.js", "Tailwind", "React Query"],
-		image: "https://picsum.photos/600/400?random=2",
+		image: "./public/dashboard.jpg",
 	},
 ];
