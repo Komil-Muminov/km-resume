@@ -54,7 +54,8 @@ export const ChatWidget: React.FC = () => {
 						whileHover={{ scale: 1.1 }}
 						whileTap={{ scale: 0.9 }}
 						onClick={() => setIsOpen(true)}
-						className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-gradient-to-r from-primary to-secondary rounded-full shadow-2xl flex items-center justify-center text-white cursor-pointer hover:shadow-primary/50"
+						className=" fixed bottom-6 right-6 z-50 w-14 h-14 bg-gradient-to-br from-blue-400 via-indigo-400 to-purple-500 rounded-full shadow-2xl flex items-center justify-center text-white cursor-pointer hover:shadow-primary/60 transform transition-all duration-150 ease-in-out border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+						aria-label="Открыть чат с AI ассистентом"
 					>
 						<MessageSquare size={24} />
 					</motion.button>
@@ -68,7 +69,7 @@ export const ChatWidget: React.FC = () => {
 						exit={{ opacity: 0, y: 20, scale: 0.95 }}
 						className="fixed bottom-6 right-6 z-50 w-[90vw] max-w-[380px] h-[500px] bg-slate-900 border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden font-sans"
 					>
-						<div className="p-4 bg-gradient-to-r from-primary to-secondary flex items-center justify-between text-white shadow-md">
+						<div className="p-4 from-primary to-secondary flex items-center justify-between text-white shadow-md">
 							<div className="flex items-center gap-2">
 								<Sparkles size={18} className="text-yellow-300" />
 								<span className="font-bold">AI Ассистент</span>
