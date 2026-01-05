@@ -20,6 +20,8 @@ lerna-debug.log*
 # Исключает все файлы .env* и *.local, 
 # кроме шаблонов (например, .env.example)
 .env
+.env.local
+server/.env
 .env.*
 !**/.env.example
 !**/.env.defaults

@@ -42,7 +42,6 @@ export const Projects: React.FC = () => {
 									className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
-
 							<div className="p-6">
 								<h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
 									{project.title}
@@ -50,7 +49,6 @@ export const Projects: React.FC = () => {
 								<p className="text-slate-400 text-sm mb-4 line-clamp-3">
 									{project.description}
 								</p>
-
 								<div className="flex flex-wrap gap-2 mb-6">
 									{project?.tech?.map((t) => (
 										<span

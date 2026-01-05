@@ -9,15 +9,21 @@ export default defineConfig(({ mode }) => {
 		server: {
 			port: 3000,
 			host: "0.0.0.0",
+			proxy: {
+				// Проксируем /api на локальный сервер разработки (порт 4000)
+				"/api": {
+					target: "http://localhost:4000",
+					changeOrigin: true,
+					secure: false,
+				},
+			},
 		},
 		plugins: [
 			react(),
 			tailwindcss(), // <-- Added tailwindcss plugin
 		],
-		define: {
-			"process.env.API_KEY": JSON.stringify(env.GEMINI_API_KEY),
-			"process.env.GEMINI_API_KEY": JSON.stringify(env.GEMINI_API_KEY),
-		},
+		// Убираем экспонирование GEMINI_API_KEY в клиентский бандл.
+		define: {},
 		resolve: {
 			alias: {
 				"@": path.resolve(__dirname, "."),
