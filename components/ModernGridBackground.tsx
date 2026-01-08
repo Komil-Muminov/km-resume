@@ -45,10 +45,13 @@ const GridMesh: React.FC<GridMeshProps> = ({
 			}
 		}
 
-		geo.setAttribute("position", new THREE.BufferAttribute(new Float32Array(positions), 3));
+		geo.setAttribute(
+			"position",
+			new THREE.BufferAttribute(new Float32Array(positions), 3),
+		);
 		geo.setAttribute(
 			"originalPosition",
-			new THREE.BufferAttribute(new Float32Array(originalPositions), 3)
+			new THREE.BufferAttribute(new Float32Array(originalPositions), 3),
 		);
 
 		return geo;
@@ -58,7 +61,8 @@ const GridMesh: React.FC<GridMeshProps> = ({
 		if (!meshRef.current) return;
 
 		timeRef.current += 0.01 * speed;
-		const positions = meshRef.current.geometry.attributes.position.array as Float32Array;
+		const positions = meshRef.current.geometry.attributes.position
+			.array as Float32Array;
 		const originalPositions = meshRef.current.geometry.attributes
 			.originalPosition.array as Float32Array;
 
@@ -71,7 +75,7 @@ const GridMesh: React.FC<GridMeshProps> = ({
 			const wave2 = Math.sin(z * 0.5 + timeRef.current * 0.7) * 0.3;
 			const distance = Math.sqrt(
 				Math.pow(mouseRef.current.x - x / size, 2) +
-					Math.pow(mouseRef.current.y - z / size, 2)
+					Math.pow(mouseRef.current.y - z / size, 2),
 			);
 
 			// Реакция на мышь
@@ -128,7 +132,10 @@ const GridLines: React.FC<{ divisions?: number; size?: number }> = ({
 			positions.push(xPos, 0, size / 2);
 		}
 
-		geo.setAttribute("position", new THREE.BufferAttribute(new Float32Array(positions), 3));
+		geo.setAttribute(
+			"position",
+			new THREE.BufferAttribute(new Float32Array(positions), 3),
+		);
 		return geo;
 	}, [divisions, size]);
 
