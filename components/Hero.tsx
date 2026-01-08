@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Canvas } from "@react-three/fiber";
-import { Sparkles, Float } from "@react-three/drei";
 import { motion } from "framer-motion";
+import { ModernGridBackground } from "./ModernGridBackground";
 const DecryptText = () => {
 	const TARGET_TEXT = "PHENOMEN";
 	const CYCLES_PER_LETTER = 2;
@@ -64,30 +63,8 @@ const DecryptText = () => {
 };
 export const Hero: React.FC = () => {
 	return (
-		<section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-dark">
-			<div className="absolute inset-0 z-0 pointer-events-none">
-				<Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
-					<ambientLight intensity={0.5} />
-					<Float speed={1} rotationIntensity={0.5} floatIntensity={0.5}>
-						<Sparkles
-							count={150}
-							scale={12}
-							size={3}
-							speed={0.4}
-							opacity={0.4}
-							color="#8b5cf6"
-						/>
-						<Sparkles
-							count={50}
-							scale={10}
-							size={5}
-							speed={0.2}
-							opacity={0.2}
-							color="#3b82f6"
-						/>
-					</Float>
-				</Canvas>
-			</div>
+		<section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-900 via-dark to-slate-950">
+			<ModernGridBackground />
 			<div className="relative z-10 max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 				<div className="text-center lg:text-left order-2 lg:order-1 mt-10 lg:mt-0">
 					<motion.div
